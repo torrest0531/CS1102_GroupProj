@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Example of HTTPS Encryption</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    <script src="./encryption.js"></script>
+</head>
+
+<body>
+    <div>
+        <h2>You are connected to our website!</h2>
+        <h3>Now we are going to construct a secure communication channel between you and this website</h3>
+    </div>
+
+    <div>
+        <p>Here is our website public key:</p>
+        <p>CS1102 - 2023/2024 Semester B</p>
+    </div>
+
+    <form action="" id="dataForm">
+        <div>
+            <label for="secretKey">Please input your secret key:</label>
+            <input type="password" id="secretKey" name="secretKey_"/>
+        </div><br>
+        <div id="input">
+            <label for="sendData">Please input your data there:</label>
+            <input type="text" id="sendData" name="sendData_" />
+            <br>
+            <br>
+            <input type="submit" />
+            <input type="reset" />
+        </div>
+    </form>
+
+    <div>
+        <h3>Step 1.</h3>
+        <p>Your data encrypted by your secret key:</p>
+        <p id="displayEncrypted1"></p>
+    </div>
+
+    <div>
+        <h3>Step 2.</h3>
+        <p>Your data encrypted by our public key</p>
+        <p id="displayEncrypted2"></p>
+    </div>
+
+    <div>
+        <p id="encrypted"></p>
+    </div>
+    <footer>CS1102 - Course Project - 2023/2024 Semester B</footer>
+</body>
