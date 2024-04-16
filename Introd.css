@@ -1,0 +1,107 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+/* Header styling */
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Main content styling */
+main {
+    padding: 15px;
+    background: #fff;
+}
+
+/* Section styling */
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #e2e2e2;
+}
+
+/* Headings within sections */
+section h3 {
+    color: #333;
+}
+
+/* Paragraphs within sections */
+section p {
+    color: #666;
+}
+
+/* Hide paragraphs following a .toggle class element */
+.toggle + p {
+    display: none;
+}
+
+/* Initially hide the toggle content */
+.toggle-content {
+    display: none;
+}
+
+
+
+/* Ensure paragraphs inside .question class are visible */
+.question p {
+    display: block; 
+}
+
+/* Quiz section styles */
+#quiz-section {
+    background: #eef;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.question {
+    margin-bottom: 10px;
+}
+
+.highlighted {
+    background-color: yellow;
+}
+
+/* Feedback styles */
+
+.feedback {
+    margin-top: 5px;
+    font-style: italic;
+}
+
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: red;
+}
+
+/* Footer styling */
+footer {
+    background: #fff;
+    color: #000000;
+    padding: 10px 0;
+    text-align: center;
+}
+
+
+
+/* Ensure that the viewport is responsive */
+@media (max-width: 768px) {
+    body {
+        padding: 0 5px;
+    }
+
+    section {
+        padding: 10px;
+    }
+}

@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction of HTTP and HTTPS</title>
+    <link rel="stylesheet" href="Introd.css">
+    <script src="Introd.js"></script>
+</head>
+
+<body>
+    <header>
+        <h2>Understanding HTTP and HTTPS</h2>
+    </header>
+        <main>
+            <section>
+                <h3 class="toggle">Introduction of HTTP</h3>
+                <p>HTTP, also known as HyperText Transfer Protocol, serves as the fundamental protocol for data
+                communication on the World Wide Web. HTTP was developed by Tim Berners-Lee and his colleagues over the
+                period of 1989-1991. It permits data transmission between web servers and clients, which requests are
+                initiated by the recipient that is typically a web browser. As HTTP allows for the transmission of
+                numerous sorts of data, including text, graphics, and multimedia, so all elements can be seen on web
+                pages.</p>
+            </section>
+            <section>
+                <h3 class="toggle">Why HTTPS Was Developed</h3>
+                <div class="toggle-content">
+                <p>Rapid growth of the Internet has led to an increase in web security concerns. In order to overcome the
+                problems of HTTP, especially the protection of the privacy and web safety as traditional HTTP was 
+                unencrypted, making data easily accessible to monitoring and distorting. Thus, HTTPS (HyperText Transfer Protocol
+                Secure) was established.</p>
+                <p> HTTPS was developed to enhance the security of HTTP by implementing encryption methods 
+                like SSL/TLS. This ensure that any data transmitted between the web server and the web browser is encrypted and protected.
+                HTTPS also provides website authentication, preventing man-in-the-middle attacks and data breaches  Moreover, it protects 
+                the integrity of the data for preventing any modifications or corruption in the process of transmitting it.</p>
+                </div>
+            </section>
+        
+            <section>
+                <h3 class="toggle">Why HTTPS is Important</h3>
+                <div class="toggle-content">
+                <p>The latest developments in encryption technology have improved the performance of HTTPS, with small extra expenses 
+                    compared to using HTTP and without negatively affecting the user's overall experience. Search engines such as Google
+                     have begun using HTTPS as a ranking indication, motivating websites to use encrypted links in order to enhance their 
+                     search exposure.</p>
+                <p>Moreover, it is strongly advised that websites use HTTPS in order to satisfy rules such as the Personal Data (Privacy) Ordinance (PDPO) 
+                   in Hong Kong and the Payment Card Industry Data Security Standard (PCI DSS). This would enhance the secure transmission of sensitive data.</p>
+                <p>These safety measures are also important for online transactions, personal data exchange and protecting privacy in the digital world. 
+                    It has become essential for each website running on the internet nowadays.</p>
+                </div>
+            </section>
+            <section id="quiz-section">
+                <h3>Quick Quiz</h3>
+                <div class="question">
+                    <p>1. Which protocol is more secure?</p>
+                    <input type="radio" id="http" name="q1" value="incorrect">
+                    <label for="http">HTTP</label><br>
+                    <input type="radio" id="https" name="q1" value="correct">
+                    <label for="https">HTTPS</label><br>
+                    <div id="feedback-q1" class="feedback"></div>
+                </div>
+                <div class="question">
+                    <p>2. Which protocol uses port 443 by default?</p>
+                    <input type="radio" id="http-443" name="q2" value="incorrect">
+                    <label for="http-443">HTTP</label><br>
+                    <input type="radio" id="https-443" name="q2" value="correct">
+                    <label for="https-443">HTTPS</label><br>
+                    <div id="feedback-q2" class="feedback"></div>
+                </div>
+                <div class="question">
+                    <p>3. Which protocol uses port 80 by default?</p>
+                    <input type="radio" id="http-80" name="q3" value="correct">
+                    <label for="http-80">HTTP</label><br>
+                    <input type="radio" id="https-80" name="q3" value="incorrect">
+                    <label for="https-80">HTTPS</label><br>
+                    <div id="feedback-q3" class="feedback"></div>
+                </div>
+                <button onclick="checkQuiz()">Submit Quiz</button>
+
+            </section>   
+        </main>
+        <footer>
+            <p>CS1102 - Course Project - 2023/2024 Semester B</p>
+            <p>Group Members: </p>
+        </footer>
+
+</body>
+
+</html>
