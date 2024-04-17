@@ -15,17 +15,6 @@
             font-size: 12px;
         }
       </style>
-
-<h1>What is HTTP?</h1>
-    <p>  
-        Hypertext Transfer Protocol (HTTP) is a protocol used for exchanging data across the network, it was designed for the early stage of the internet under the client-server model 
-    </p>
-
-    <h2>What is HTTPS?</h2>
-    <p>
-        Hypertext Transfer Protocol secure (HTTPS) is a protocol performing the same function as HTTP furthermore encrypting the HTTP requests and responses, 
-    </p>
-
     <h3>What is the differnces of HTTP and HTTPS?
         <p>  
             The major 
