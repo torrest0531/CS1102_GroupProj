@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
 <title>   
-    Why no one using HTTPS anymore?
+    Why is no one using HTTPS anymore?
 </title>  
 
 </head>
@@ -9,31 +9,61 @@
 <body>
     <style>
         h1,h2,h3,h4,h5,h6 {
-          font-size: 16px;
+          font-size: 14px;
         }
         p {
             font-size: 12px;
         }
       </style>
-    <h3>What is the differnces of HTTP and HTTPS?
+    <h1> What is the differnces of HTTP and HTTPS?
         <p>  
-            The major 
+            The major difference between HTTP and HTTPS is how they handle the data sent out when HTTPS will perform encryption, but HTTP won't.
+        </p>
+    </h1>
+    <h2>What do HTTP look like?
+        <p>
+            When performing various internet actions and events, data communication occurs, and the process can be monitored or reviewed by using the network analyser tool named a packet analyser, 
+            also known by several names, such as packet sniffer, protocol analyser, or network analyser.<br> 
+            Wireshark is one of the popular packet analysers in ethical hacking and illegal attacks; 
+            in the following part will use Wireshark to review the packet while browsing the <a href="http://web.simmons.edu/~grovesd/comm244/notes/week2/links"> Reference HTTP Website</a> 
+            and see how HTTP look like.
+        </p>
+        <p>
+            A HTTP packet is usually divide to two part: HTTP request and HTTP response. HTTP is performing under the distributed application structure called as Client–server model. 
+            It is a model two attributies of client and server, the client ( a machienes like smartphone,Laptop) will send request thought internet and the server will response with the requested information back to client.<br> 
+            ![client](/images/client.jpg) width="500" height="333> <br>
+
+        </p>
+    </h2>
+    <h3> What do HTTPS look like?   
+        <p>
+ 
+
         </p>
     </h3>
-    <h4>How HTTP look like?
+    <h4>Why HTTPS is better than HTTP?
         <p>
 
         </p>
     </h4>
-    <h5>How HTTPS look like?
+
+    <h5>
         <p>
 
         </p>
     </h5>
-    <h6>Why HTTPS is better that HTTP?
-        <p>
 
+    <h6> What happen if user using http for browsing?
+        <p>
+            In this part, it will use a LAB under a virtual server to perform an ARP Spoofing Attack on the victim's computer and 
+            showcase what will happen if your machine gets attacked and the consequences of using HTTP on browsing.
         </p>
+        <iframe width="500" height="320" 
+        src="https://www.youtube.com/embed/2pi3seSBLZU"
+        frameborder="0" allowfullscreen>>
+        </iframe>
+       
     </h6>
 </body>
 </html>
+
