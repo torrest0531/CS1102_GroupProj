@@ -53,7 +53,6 @@
             An HTTP packet is usually divided into two parts: HTTP request and HTTP response. HTTP is performed under the distributed application structure called the client-server model.<br> 
             It is a model of two attributes of client and server: the client ( a machine like a smartphone or laptop) will send a request through the internet, and the server will respond<br>
             with the requested information back to the client.<br> 
-            ![client](/images/client.jpg) width="500" height="333> 
         </p> 
         <p>
             The HTTP request is always located at the beginning of a data packet containing communication information between the client and server. <br>
