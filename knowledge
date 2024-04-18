@@ -9,7 +9,7 @@
 <body>
     <style>
         h1,h2,h3,h4,h5,h6 {
-          font-size: 14px;
+          font-size: 16px;
         }
         p, pre{
             font-size: 12px;
@@ -42,15 +42,15 @@
     </h1>
     <header><h2> What does an HTTP packet look like?<h2></header>
         <p>
-            When performing various internet actions and events, data communication occurs, and the process can be monitored or reviewed by using the network analyser tool named a packet analyser, 
-            also known by several names, such as packet sniffer, protocol analyser, or network analyser.<br> 
-            Wireshark is one of the popular packet analysers in ethical hacking and illegal attacks; 
+            When performing various internet actions and events, data communication occurs, and the process can be monitored or reviewed by using the network analyser tool named a packet analyser, <br>
+            also known by several names, such as packet sniffer, protocol analyser, or network analyser.Wireshark is one of the popular packet analysers in ethical hacking and illegal attacks;<br> 
             in the following part, there will use Wireshark to review the packet while browsing the <a href="http://web.simmons.edu/~grovesd/comm244/notes/week2/links"> Reference HTTP Website</a> 
             and see what HTTP look like.
         </p>
         <p>
-            An HTTP packet is usually divided into two parts: HTTP request and HTTP response. HTTP is performed under the distributed application structure called the client–server model. 
-            It is a model of two attributes of client and server: the client ( a machine like a smartphone or laptop) will send a request through the internet, and the server will respond with the requested information back to the client.<br> 
+            An HTTP packet is usually divided into two parts: HTTP request and HTTP response. HTTP is performed under the distributed application structure called the client–server model.<br> 
+            It is a model of two attributes of client and server: the client ( a machine like a smartphone or laptop) will send a request through the internet, and the server will respond<br>
+            with the requested information back to the client.<br> 
             ![client](/images/client.jpg) width="500" height="333> 
         </p> 
         <p>
@@ -164,9 +164,8 @@ k?.r$I".HA..?.$YI..B.5.....
         <header><h6> What happens if the user uses HTTP for browsing?</h6>
         </header>
         <p>
-            This part will perform an ARP Spoofing Attack on the victim's computer to spoof data packet sending; simultaneously, the victim will try to log in to the server under an HTTP website. 
-            As a result, the victim's account information was sniffed by the hacker and the hacker successfully logged in to the victim's account
-            This lab aims to showcase the consequences of using HTTP when browsing and why HTTPS is important in the current internet.
+            This part will perform an ARP Spoofing Attack on the victim's computer to spoof data packet sending; simultaneously, the victim will try to log in to the server under an HTTP website.<br>
+            As a result, the victim's account information was sniffed by the hacker and the hacker successfully logged in to the victim's account and it's showing the risk using HTTP broswing.<br>`
         </p>
         <iframe width="400" height="220" 
         src="https://www.youtube.com/embed/2pi3seSBLZU"
@@ -174,4 +173,3 @@ k?.r$I".HA..?.$YI..B.5.....
         </iframe>
 </body>
 </html>
-
