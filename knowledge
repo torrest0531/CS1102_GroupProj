@@ -37,18 +37,20 @@
       </style>
     <header><h1> Why HTTPS is better than HTTP?</h1></header>
         <p>  
-            The major difference between HTTP and HTTPS is how they handle the data sent out when HTTPS will perform encryption, but HTTP won't.
+            The major difference between HTTP and HTTPS is how they handle the data sent out when HTTPS will perform encryption, but HTTP won't. Encryption is a security method that will scramble the data,<br> 
+            and it will only able to be viewed by authorised users. The original version of the data document that will perform encryption is called plaintext; the encryption method can be one or multi-algorithm <br>
+            only known by the sender and receiver. After the process of encryption, the encrypted document received is called ciphertext.     
         </p>
     </h1>
     <header><h2> What does an HTTP packet look like?<h2></header>
         <p>
             When performing various internet actions and events, data communication occurs, and the process can be monitored or reviewed by using the network analyser tool named a packet analyser, <br>
-            also known by several names, such as packet sniffer, protocol analyser, or network analyser.Wireshark is one of the popular packet analysers in ethical hacking and illegal attacks;<br> 
+            also known by several names, such as packet sniffer, protocol analyser, or network analyser. Wireshark is one of the popular packet analysers in ethical hacking and illegal attacks;<br> 
             in the following part, there will use Wireshark to review the packet while browsing the <a href="http://web.simmons.edu/~grovesd/comm244/notes/week2/links"> Reference HTTP Website</a> 
             and see what HTTP look like.
         </p>
         <p>
-            An HTTP packet is usually divided into two parts: HTTP request and HTTP response. HTTP is performed under the distributed application structure called the client–server model.<br> 
+            An HTTP packet is usually divided into two parts: HTTP request and HTTP response. HTTP is performed under the distributed application structure called the client-server model.<br> 
             It is a model of two attributes of client and server: the client ( a machine like a smartphone or laptop) will send a request through the internet, and the server will respond<br>
             with the requested information back to the client.<br> 
             ![client](/images/client.jpg) width="500" height="333> 
