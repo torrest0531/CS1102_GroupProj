@@ -166,7 +166,7 @@ k?.r$I".HA..?.$YI..B.5.....
         </header>
         <p>
             This part will perform an ARP Spoofing Attack on the victim's computer to spoof data packet sending; simultaneously, the victim will try to log in to the server under an HTTP website.<br>
-            As a result, the victim's account information was sniffed by the hacker and the hacker successfully logged in to the victim's account and it's showing the risk using HTTP broswing.<br>`
+            As a result, the victim's account information was sniffed by the hacker, and the hacker successfully logged in to the victim's account and it's showing the risk using HTTP browsing.<br>
         </p>
         <iframe width="400" height="220" 
         src="https://www.youtube.com/embed/2pi3seSBLZU"
