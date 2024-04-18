@@ -14,13 +14,23 @@
         p, pre{
             font-size: 10px;
         }
+
+        .scroll-box {
+            width: 500px;
+            height: 100px;
+            overflow: auto;
+            white-space: pre;
+            font-family: monospace;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
       </style>
-    <h1> Why HTTPS is better than HTTP?
+    <header><h1> Why HTTPS is better than HTTP?</h1></header>
         <p>  
             The major difference between HTTP and HTTPS is how they handle the data sent out when HTTPS will perform encryption, but HTTP won't.
         </p>
     </h1>
-    <h2> What does an HTTP packet look like?
+    <header><h2> What does an HTTP packet look like?<h2></header>
         <p>
             When performing various internet actions and events, data communication occurs, and the process can be monitored or reviewed by using the network analyser tool named a packet analyser, 
             also known by several names, such as packet sniffer, protocol analyser, or network analyser.<br> 
@@ -47,7 +57,7 @@
             Cookie: _ga=GA1.2.644076473.1713391073; _gid=GA1.2.155137255.1713391073; _ga_3DEZ6EPPHR=GS1.2.1713393618.2.0.1713393618.0.0.0; _gat=1 <br>
         </p>
         <p>
-            The HTTP response is the process server sending back the requested informatin to client and this is how a HTTP response in real life.
+            The HTTP response is the process server sending back the requested information to the client, and this is how an HTTP response is in real life.
             
             <br><br>HTTP/1.1 200 OK<br>
             Date: Wed, 17 Apr 2024 22:40:35 GMT<br>
@@ -59,59 +69,50 @@
             Connection: Keep-Alive<br>
             Transfer-Encoding: chunked<br>
             Content-Type: text/html; charset=UTF-8<br>
-            
-            <pre>
-                &lt;<!DOCTYPE html>&gt;
-                &lt;!DOCTYPE html&gt;
-                &lt;html lang=&quot;en&quot;&gt;
-                &lt;head&gt;
-                  &lt;title&gt;All About Links&lt;/title&gt;
-                  &lt;meta charset=&quot;utf-8&quot; /&gt;
-                  &lt;meta name=&quot;generator&quot; content=&quot;TextMate http://macromates.com/&quot;&gt;
-                  &lt;meta name=&quot;author&quot; content=&quot;Dane Groves&quot;&gt;
-                &lt;/head&gt;
-                &lt;body&gt;
-                  &lt;h1&gt;HTML Code Example&lt;/h1&gt;
-                &lt;/body&gt;
-                &lt;/html&gt;
-                 ...........
-              </pre>
+            <div class="scroll-box">
+            <pre>               
+        &lt;<!DOCTYPE html>&gt;
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang=&quot;en&quot;&gt;
+        &lt;head&gt;
+        &lt;title&gt;All About Links&lt;/title&gt;
+        &lt;meta charset=&quot;utf-8&quot; /&gt;
+        &lt;meta name=&quot;generator&quot; content=&quot;TextMate http://macromates.com/&quot;&gt;
+        &lt;meta name=&quot;author&quot; content=&quot;Dane Groves&quot;&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+        &lt;h1&gt;HTML Code Example&lt;/h1&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+        ..........
+        </pre>
+        </div>
             </p>
             <P>
                 As you can see, after sending a request to browse an HTTP website, the server will send back the HTTP response with website HTML, 
                 and the information is fully disclosed without any encryption. 
             </P>
-
-    </h2>
-    <h3>  What does an HTTPS packet look like?   
+        <header><h3>What does an HTTPS packet look like?</h3></header>
+          
         <p>
             As mentioned in the previous part, the difference between HTTP and HTTPS is that HTTPS encrypts the data packet of HTTP request and HTTP response. Let's see what HTTPS look like.<br>
             Data packets will not present in a human understanding content; instead, all the information is encrypted, and it will not be able to understand the content by human<br>
             <br>The data packet will look like this:<br>
-
-            <br>........g..$...`:j$.n..XD8.1...@......&}@7.fR;.5......	..8nR......=9.K.....<....+...0......T..P...IW.)
-            ...%M.`L).........vQBx-v...K........(H6..E....._....OT...O!.....?.a..o. .ZtOf..Nyjf.%..]'."..........sN...;..H.S..
+        <div class="scroll-box"> 
+&lt;........g..$...`:j$.n..XD8.1...@......&}@7.fR;.5......	..8nR......=9.K.....<....+...0......T..P...IW.)
+...%M.`L).........vQBx-v...K........(H6..E....._....OT...O!.....?.a..o. .ZtOf..Nyjf.%..]'."..........sN...;..H.S.. &gt;
+        </div>
         </p>
-    </h3>
-    <h5>
-        <p>
 
-        </p>
-    </h5>
-
-    <h6> What happens if the user uses HTTP for browsing?
+        <header><h6> What happens if the user uses HTTP for browsing?</h6></header>
         <p>
             This part will perform an ARP Spoofing Attack on the victim's computer to spoof data packet sending; simultaneously, the victim will try to log in to the server under an HTTP website. 
-            As result, the victim's account information sniffed by the hacker and the hacker successfully logged in to the victim's account
-            This lab aims to showcase the consequences of using HTTP when browsing and why HTTPS is important in currently internet.
+            As a result, the victim's account information was sniffed by the hacker and the hacker successfully logged in to the victim's account
+            This lab aims to showcase the consequences of using HTTP when browsing and why HTTPS is important in the current internet.
         </p>
         <iframe width="400" height="220" 
         src="https://www.youtube.com/embed/2pi3seSBLZU"
         frameborder="0" allowfullscreen>>
         </iframe>
-        <p>
-
-        </p>
-    </h6>
 </body>
 </html>
