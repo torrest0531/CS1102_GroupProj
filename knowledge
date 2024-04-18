@@ -38,7 +38,7 @@
     <header><h1> Why HTTPS is better than HTTP?</h1></header>
         <p>  
             The major difference between HTTP and HTTPS is how they handle the data sent out when HTTPS will perform encryption, but HTTP won't. Encryption is a security method that will scramble the data,<br> 
-            and it will only able to be viewed by authorised users. The original version of the data document that will perform encryption is called plaintext; the encryption method can be one or multi-algorithm <br>
+            and it will only able to be viewed by authorised users. The original version of the data document from the sender without any encryption is called plaintext; the encryption method can be one or multi-algorithm <br>
             only known by the sender and receiver. After the process of encryption, the encrypted document received is called ciphertext.     
         </p>
     </h1>
