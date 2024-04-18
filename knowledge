@@ -12,17 +12,27 @@
           font-size: 14px;
         }
         p, pre{
-            font-size: 10px;
+            font-size: 12px;
         }
-
-        .scroll-box {
-            width: 500px;
-            height: 100px;
+        .HTTP {
+            width: 800px;
+            height: 200px;
             overflow: auto;
             white-space: pre;
             font-family: monospace;
             border: 1px solid #ccc;
             padding: 10px;
+            font-size: 12px;
+        }
+        .HTTPS {
+            width: 800px;
+            height: 200px;
+            overflow: auto;
+            white-space: pre;
+            font-family: monospace;
+            border: 1px solid #ccc;
+            padding: 10px;
+            font-size: 12px;
         }
       </style>
     <header><h1> Why HTTPS is better than HTTP?</h1></header>
@@ -45,49 +55,80 @@
         </p> 
         <p>
             The HTTP request is always located at the beginning of a data packet containing communication information between the client and server. <br>
-            <br>
-            <br> GET /~grovesd/comm244/notes/week2/links HTTP/1.1<br>
-            Host: web.simmons.edu <br>
-            User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0 <br>
-            Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8 <br>
-            Accept-Language: en-US,en;q=0.5 <br>
-            Accept-Encoding: gzip, deflate <br>
-            Referer: https://www.google.com/ <br>
-            Connection: keep-alive <br>
-            Cookie: _ga=GA1.2.644076473.1713391073; _gid=GA1.2.155137255.1713391073; _ga_3DEZ6EPPHR=GS1.2.1713393618.2.0.1713393618.0.0.0; _gat=1 <br>
+            <div class="HTTP">
+
+GET /~grovesd/comm244/notes/week2/links HTTP/1.1
+Host: web.simmons.edu 
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8 
+Accept-Language: en-US,en;q=0.5 
+Accept-Encoding: gzip, deflate 
+Referer: https://www.google.com/ 
+Connection: keep-alive 
+Cookie: _ga=GA1.2.644076473.1713391073; _gid=GA1.2.155137255.1713391073; _ga_3DEZ6EPPHR=GS1.2.1713393618.2.0.1713393618.0.0.0; _gat=1
+            
+</div> 
         </p>
         <p>
             The HTTP response is the process server sending back the requested information to the client, and this is how an HTTP response is in real life.
+        
+            <div class="HTTP">
+HTTP/1.1 200 OK
+ate: Wed, 17 Apr 2024 22:40:35 GMT
+Server: Apache
+Content-Location: links.php
+Vary: negotiate
+TCN: choice
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+&lt;title&gt;All About Links&lt;/title&gt;
+&lt;meta charset="utf-8" /&gt;
+&lt;meta name="generator" content="TextMate http://macromates.com/"&gt;
+&lt;meta name="author" content="Dane Groves"&gt;
+&lt;link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"&gt;
+&lt;!-- &lt;link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"&gt; -->
+&lt;link rel="stylesheet" href="http://web.simmons.edu/~grovesd/comm244/css/notes.css" media="screen"&gt;
             
-            <br><br>HTTP/1.1 200 OK<br>
-            Date: Wed, 17 Apr 2024 22:40:35 GMT<br>
-            Server: Apache<br>
-            Content-Location: links.php<br>
-            Vary: negotiate<br>
-            TCN: choice<br>
-            Keep-Alive: timeout=5, max=100<br>
-            Connection: Keep-Alive<br>
-            Transfer-Encoding: chunked<br>
-            Content-Type: text/html; charset=UTF-8<br>
-            <div class="scroll-box">
-            <pre>               
-        &lt;<!DOCTYPE html>&gt;
-        &lt;!DOCTYPE html&gt;
-        &lt;html lang=&quot;en&quot;&gt;
-        &lt;head&gt;
-        &lt;title&gt;All About Links&lt;/title&gt;
-        &lt;meta charset=&quot;utf-8&quot; /&gt;
-        &lt;meta name=&quot;generator&quot; content=&quot;TextMate http://macromates.com/&quot;&gt;
-        &lt;meta name=&quot;author&quot; content=&quot;Dane Groves&quot;&gt;
-        &lt;/head&gt;
-        &lt;body&gt;
-        &lt;h1&gt;HTML Code Example&lt;/h1&gt;
-        &lt;/body&gt;
-        &lt;/html&gt;
-        ..........
-        </pre>
-        </div>
-            </p>
+&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+                
+&lt;script src="http://web.simmons.edu/~grovesd/comm244/js/prism.js"&gt;&lt;/script&gt;
+&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"&gt;&lt;/script&gt;
+            
+&lt;script&gt;
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+            
+ga('create', 'UA-89923459-1', 'auto');
+ga('send', 'pageview');
+            
+&lt;/script&gt;
+&lt;/head&gt;
+            
+&lt;body&gt;
+&lt;p class="backlink"&gt;&lt;a href="../../week2"&gt;Back to Week 2 page &raquo;&lt;/a&gt;&lt;/p&gt;
+            
+&lt;h1&gt;All About Links&lt;/h1&gt;
+            
+&lt;h2 id="dissecting_a_url"&gt;Dissecting a URL&lt;/h2&gt;
+            
+&lt;figure&gt;
+lt;img src="url-parts.jpg" alt="The Parts of a URL explained" /&gt;
+&lt;figcaption&gt;The parts of a URL. From &lt;em&gt;Learning Web Design&lt;/em&gt;, p. 24&lt;/figcaption&gt;
+&lt;/figure&gt;           
+&lt;ul&gt;
+..........
+            </div>
+            
+        </p>
             <P>
                 As you can see, after sending a request to browse an HTTP website, the server will send back the HTTP response with website HTML, 
                 and the information is fully disclosed without any encryption. 
@@ -98,13 +139,30 @@
             As mentioned in the previous part, the difference between HTTP and HTTPS is that HTTPS encrypts the data packet of HTTP request and HTTP response. Let's see what HTTPS look like.<br>
             Data packets will not present in a human understanding content; instead, all the information is encrypted, and it will not be able to understand the content by human<br>
             <br>The data packet will look like this:<br>
-        <div class="scroll-box"> 
-&lt;........g..$...`:j$.n..XD8.1...@......&}@7.fR;.5......	..8nR......=9.K.....<....+...0......T..P...IW.)
-...%M.`L).........vQBx-v...K........(H6..E....._....OT...O!.....?.a..o. .ZtOf..Nyjf.%..]'."..........sN...;..H.S.. &gt;
+        <div class="HTTPS"> 
+......._>{... X...!....{...K.....w.L.......>8..A~.n..q..@...\{.H....P~y.^L.EEy..j..F.....S.....|...
+....{P......Z....t#LT..	.\d.Gl.....8..V......+.v...Lt....S..]C..=.,A...a`.....}%J.S..P.L.q\f......f|.......
+j.\A'.1........7Hr..'.y...T.sF..d.C...yT.F.....;oD.).LS..+.]..`.Y.j...?m....D	9.o...8o0....:qL.=..+..
+s.4.nR....<.~..S...I.....d6.......Y..zZ...!1....>rF......8.e..L...........L..n]..I...'......A.....f.Y..
+...)s....a.+.5..V.........8',.c| @}.os.9...@)b_.j.-..+........8|3....Z.9.....-..[........%1.*...t.!?..n
+h..6.g....0B.)1...^s...W.<&..#co.[........;VZ?6<......L:fX....T..6M.2...A9..D....@..o.\a..J..~=.....h..
+.|..8.O%?N..(.Cl..>[.kF.;y.A.eS<.gHMG_^0$.I.1I8.v.wx.B{uw*@P.o....].e.W.....<B&..#c..}......a.....NG...".
+..=4....iW.,..Mb....E..vS..y..<'K!...e....<.GD..k....\...2..P.....3.%c.......l....
+.........`...QK.1x	M.... 5.....BR+.w..._*.....b.....nP.+}.c...2@ja.8....{1.,...-..>.....}..O
+...$..9.h.|....1..;gz.3|{7R...f.....3./..,..4.}wm...`a.......X.O...H}.^..'........mO...UqH..8w....C...D.M.	
+.....*r#:.?3.........9.6.I.n.U}x.Dq.k)....:..6.~..@..}.hp.+teH..KOh...L.]..P.=..H.%.G....!**x......ROG...p.>
+_..,y.....u....o...Y..........AR.\;.+.0...Vq.>.....K4!....!.<P.F...[.c.j.M3.V../.O{..l.".^..:.-.\...F.V.o8.Y
+o.......0...]?.F.>.".B./s..M.. ).4..~"V.g$.=...{......*3.%.e....
+.t....8...r.u....N.....H.u....!...uQ...$.Acka.F.r......k$.\LO.,.....g.(P...$...1.\..Ucm.T.!p'G.%....JfO....P$
+o..G.<.+.>...Nxi...3b.(..r.....r5..y.....C...|@.gl.f......;t.T..............d.....\....Q.(..<.......17R..b...
+WQ......*.M1.u&.ww.!U..>+uQ......|J..@.T..9J..p^..?....%.....!f.s'.w
+aUd~.....(..o...nt...$.e.h...0k..L..$...k{n.7..w.1...^........bM
+k?.r$I".HA..?.$YI..B.5.....
         </div>
         </p>
 
-        <header><h6> What happens if the user uses HTTP for browsing?</h6></header>
+        <header><h6> What happens if the user uses HTTP for browsing?</h6>
+        </header>
         <p>
             This part will perform an ARP Spoofing Attack on the victim's computer to spoof data packet sending; simultaneously, the victim will try to log in to the server under an HTTP website. 
             As a result, the victim's account information was sniffed by the hacker and the hacker successfully logged in to the victim's account
@@ -116,3 +174,4 @@
         </iframe>
 </body>
 </html>
+
