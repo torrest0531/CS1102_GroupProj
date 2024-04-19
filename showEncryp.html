@@ -5,6 +5,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
     <script src="./encryption.js"></script>
     <link rel="stylesheet" href="./css/theme.css">
+    <link rel="stylesheet" href="./css/encrypt.css">
 </head>
 
 <body>
@@ -27,12 +28,27 @@
         <p>CS1102 - 2023/2024 Semester B</p>
     </div>
 
-    <form action="" id="dataForm">
-        <div>
+    <div class="tabs">
+        <button class="tablinks" onclick="openSelection(event, 'Random')">Random Key</button>
+        <button class="tablinks" onclick="openSelection(event, 'SelfInput')">Self-defined Key</button>
+
+        <div id="Random" class="tabcontent">
+            <button onclick="generateKey()">Generate Key</button>
+            <p id="secretKey"></p>
+        </div>
+            
+        <div id="SelfInput" class="tabcontent">
             <label for="secretKey">Please input your secret key:</label>
             <input type="password" id="secretKey" name="secretKey_"/>
-        </div><br>
+        </div>
+
+    </div><br>
+    <form action="" id="dataForm">
         <div id="input">
+            <!-- <div id="Random" class="">
+                <button onclick="generateKey()">Generate Key</button>
+                <p id="secretKey1"></p>
+            </div> -->
             <label for="sendData">Please input your data there:</label>
             <input type="text" id="sendData" name="sendData_" />
             <br>
