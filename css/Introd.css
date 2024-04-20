@@ -75,16 +75,3 @@ footer {
     padding: 10px 0;
     text-align: center;
 }
-
-
-
-/* Ensure that the viewport is responsive */
-@media (max-width: 768px) {
-    body {
-        padding: 0 5px;
-    }
-
-    section {
-        padding: 10px;
-    }
-}
