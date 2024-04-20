@@ -38,23 +38,6 @@ section p {
     color: #666;
 }
 
-/* Hide paragraphs following a .toggle class element */
-.toggle + p {
-    display: none;
-}
-
-/* Initially hide the toggle content */
-.toggle-content {
-    display: none;
-}
-
-
-
-/* Ensure paragraphs inside .question class are visible */
-.question p {
-    display: block; 
-}
-
 /* Quiz section styles */
 #quiz-section {
     background: #eef;
