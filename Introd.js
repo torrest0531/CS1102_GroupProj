@@ -4,31 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if(submitButton) {
       submitButton.addEventListener('click', checkQuiz);
     }
-  
-    // Toggle functionality for content sections
-    const toggleElements = document.querySelectorAll('.toggle');
-    toggleElements.forEach((toggleElement) => {
-      toggleElement.addEventListener('click', () => {
-        const content = toggleElement.nextElementSibling;
-        content.style.display = content.style.display === 'none' ? 'block' : 'none';
-      });
-    });
-  });
-
-  document.addEventListener('DOMContentLoaded', () => {
-    const toggles = document.querySelectorAll('.toggle');
-    
-    toggles.forEach(toggle => {
-        toggle.addEventListener('click', () => {
-            const content = toggle.nextElementSibling;
-            if (content.style.display === 'none') {
-                content.style.display = 'block';
-            } else {
-                content.style.display = 'none';
-            }
-        });
-    });
-});
 
 // Function to check the quiz answers and provide feedback
 function checkQuiz() {
