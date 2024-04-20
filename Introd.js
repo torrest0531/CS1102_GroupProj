@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if(submitButton) {
       submitButton.addEventListener('click', checkQuiz);
     }
+});
 
 // Function to check the quiz answers and provide feedback
 function checkQuiz() {
