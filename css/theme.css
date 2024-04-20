@@ -1,7 +1,7 @@
 
 /* Navigation bar styles */
 * {
-    font-family: monospace, 'Courier New', Courier;
+    font-family: "Gill Sans", sans-serif;
 }
 
 nav {
@@ -26,7 +26,6 @@ nav ul li a {
     color: white;
     text-decoration: none;
     padding: 10px 0;
-    display: block;
 }
 
 nav ul li a:hover {
