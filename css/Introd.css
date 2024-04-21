@@ -67,11 +67,3 @@ section p {
 .incorrect {
     color: red;
 }
-
-/* Footer styling */
-footer {
-    background: #fff;
-    color: #000000;
-    padding: 10px 0;
-    text-align: center;
-}
