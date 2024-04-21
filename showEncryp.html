@@ -25,8 +25,10 @@
 
     <div>
         <p>Here is our website public key:</p>
-        <p>CS1102 - 2023/2024 Semester B</p>
+        <p id="publicKey">CS1102 - 2023/2024 Semester B</p>
     </div>
+
+    <div><h4>You can choose one of the keys for encryption</h4></div>
 
     <div class="tabs">
         <button class="tablinks" onclick="openSelection(event, 'Random')">Random Key</button>
@@ -58,21 +60,30 @@
         </div>
     </form>
 
-    <div>
-        <h3>Step 1.</h3>
-        <p>Your data encrypted by your secret key:</p>
-        <p id="displayEncrypted1"></p>
-    </div>
+    <div class="demonstrate">
+        <div class="step">
+            <h3>Step 1.</h3>
+            <p>Your data encrypted by your secret key:</p>
+            <p id="displayEncrypted1"></p>
+        </div>
 
-    <div>
-        <h3>Step 2.</h3>
-        <p>Your data encrypted by our public key</p>
-        <p id="displayEncrypted2"></p>
+        <div id="img1" class="example">
+            <img src="./image/step1.jpeg">
+        </div>
     </div>
+    <div class="demonstrate">
+        <div class="step">
+            <h3>Step 2.</h3>
+            <p>Your data encrypted by our public key</p>
+            <p id="displayEncrypted2"></p>
+        </div>
 
-    <div>
-        <p id="encrypted"></p>
+        <div id="img2" class="example">
+            <img src="./image/step2.jpeg">
+        </div>
+
     </div>
+    <div id="encrypted"></div>
     <footer>
         <p>CS1102 - Course Project - 2023/2024 Semester B</p>
         <p>Group Members: Tsang Chun Pui, Guo Nan, Yeung Ka Kit, Yeung Kelvin Chun Kan</p>

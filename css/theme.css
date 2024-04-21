@@ -34,8 +34,9 @@ nav ul li a:hover {
 
 /* Footer styling */
 footer {
-    background: #fff;
-    color: #000000;
+    background: #3498DB;
+    color: white;
     padding: 10px 0;
     text-align: center;
+    clear: right;
 }

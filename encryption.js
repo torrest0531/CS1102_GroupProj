@@ -42,6 +42,6 @@ window.onload = function() {
         document.getElementById('displayEncrypted1').innerHTML = ciphertext1;
         document.getElementById('displayEncrypted2').innerHTML = ciphertext2;
 
-        document.getElementById('encrypted').innerHTML = "<h2>Now the data your sent to us only can be decrypted by our private key</h2>";
+        document.getElementById('encrypted').innerHTML = "<h1>Now, we can communicate through the encrypted channel!</h1>";
     });
 }

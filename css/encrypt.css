@@ -1,3 +1,7 @@
+#publicKey {
+    text-decoration: underline;
+}
+
 .tab {
     overflow: hidden;
     border: 1px solid #ccc;
@@ -30,4 +34,18 @@
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
+}
+
+.step {
+    float: left;
+}
+
+.demonstrate {
+    display: flex;
+    justify-content: center;
+}
+
+#encrypted {
+    display: flex;
+    justify-content: center;
 }
